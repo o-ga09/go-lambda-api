@@ -1,11 +1,11 @@
 service: go-lambda-api
-frameworkVersion: '>=1.28.0 <2.0.0'
+frameworkVersion: '>=1.28.0'
 provider:
  name: aws
  runtime: go1.x
  stage: dev
  region: ap-northeast-1
- profile: your-profile
+ profile: default
 package:
  exclude:
    - ./**
@@ -13,7 +13,7 @@ package:
    - ./bin/**
 functions:
  go-lambda:
-   handler: bin/go-lambda
+   handler: bin/go-lambda-api
    timeout: 300
    events:
      - http:

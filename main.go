@@ -11,9 +11,9 @@ func main() {
 	lambda.Start(handler)
 }
 
-func handler(ctx context.Context, request events.APIGatewayProxyRequest) events.APIGatewayProxyResponse {
+func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	return events.APIGatewayProxyResponse{
 		Body:       "status ok !",
 		StatusCode: 200,
-	}
+	}, nil
 }
