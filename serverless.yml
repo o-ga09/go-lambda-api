@@ -19,3 +19,4 @@ functions:
      - http:
          path: eventtest
          method: get
+         authorizer: aws_iam
