@@ -5,7 +5,6 @@ provider:
  runtime: go1.x
  stage: dev
  region: ap-northeast-1
- profile: default
 package:
  exclude:
    - ./**
