@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Go
         run: |
-          GOARCH=amd64 GOOS=linux go build -ldflags="-s -w" -o bin/go-lambda-api main.go          
+          GOOS=linux go build -ldflags="-s -w" -o bin/go-lambda-api main.go          
 
       - name: Setup AWS
         uses: aws-actions/configure-aws-credentials@v1
