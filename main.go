@@ -30,10 +30,10 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 }
 
 type Response struct {
-	Count  int64 `json:"count,omitempty"`
-	Limit  int64 `json:"limit,omitempty"`
-	Offset int64 `json:"offset,omitempty"`
-	User   User  `json:"user,omitempty"`
+	Count  int  `json:"count,omitempty"`
+	Limit  int  `json:"limit,omitempty"`
+	Offset int  `json:"offset,omitempty"`
+	User   User `json:"user,omitempty"`
 }
 
 type User struct {
