@@ -14,7 +14,7 @@ func main() {
 
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	response := Response{
-		Count:  100,
+		Count:  1,
 		Limit:  1,
 		Offset: 10,
 		User: User{
